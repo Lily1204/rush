@@ -1,0 +1,25 @@
+<div class="modal-content">
+  <div class="modal-header" style="background-color: red;"></div>
+  <div class="modal-body">
+    <div class="modal-dialog modal-confirm">
+      <div class="text-center">
+        <i class="fas fa-trash-alt" style="font-size: 200px; color: red;"></i>
+      </div>
+      <br />
+    </div>
+    <div>
+      <div class="text-center">
+        <h5 class="modal-title">¿Esta seguro de realizar esta operación?</h5>
+      </div>
+    </div>
+  </div>
+  <br />
+  <div class="modal-footer text-center">
+    <button type="button" class="btn btn-secondary" (click)="closeModal()">
+      Cancelar
+    </button>
+    <button type="button" class="btn btn-danger" (click)="delete()">
+      Eliminar
+    </button>
+  </div>
+</div>

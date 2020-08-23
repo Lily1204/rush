@@ -1,0 +1,27 @@
+<div class="modal-content">
+  <div class="modal-header text-center">
+    <h4>{{ title }}</h4>
+  </div>
+  <div class="modal-body">
+    <form [formGroup]="categoryForm">
+      <div class="form-group">
+        <label>Nombre</label>
+        <input
+          type="text"
+          class="form-control"
+          formControlName="name"
+          placeholder="Ingresa nombre del producto"
+        />
+      </div>
+    </form>
+  </div>
+  <br />
+  <div class="modal-footer text-center">
+    <button type="button" class="btn btn-secondary" (click)="closeModal()">
+      Cancelar
+    </button>
+    <button type="button" class="btn btn-warning" (click)="createCategory()">
+      Aceptar
+    </button>
+  </div>
+</div>

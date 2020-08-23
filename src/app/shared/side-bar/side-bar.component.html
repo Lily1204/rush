@@ -1,0 +1,45 @@
+<mat-nav-list>
+  <div class="center" style="padding: 15%;">
+    <img
+      style="height: 100% !important; width: 100% !important;"
+      src="../../assets/Componente 22 – 1@3x.png"
+    />
+  </div>
+
+  <div style="margin-top: 40%;">
+    <a
+      mat-list-item
+      routerLinkActive="list-item-active"
+      routerLink="/rush/products"
+      style="height: 75px; width: 250px; padding: 0px 15px 0px 15px;"
+    >
+      <img src="../../assets/OjlzeO.tif@2x.png" style="margin-right: 40px;" />
+      <span style="color: #82867e; font-size: 20px; font-weight: 500;">
+        Productos
+      </span></a
+    >
+    <a
+      mat-list-item
+      routerLinkActive="list-item-active"
+      routerLink="/rush/categories"
+      style="height: 75px; width: 250px; padding: 0px 15px 0px 15px;"
+    >
+      <img src="../../assets/food.png" style="margin-right: 40px;" />
+      <span style="color: #82867e; font-size: 20px; font-weight: 500;">
+        Categorias
+      </span></a
+    >
+  </div>
+
+  <div class="center" style="margin-top: 320px;">
+    <a mat-list-item routerLinkActive="list-item-active" (click)="logout()">
+      <img
+        src="../../assets/door-open-regular@2x.png"
+        style="margin-right: 40px;"
+      />
+      <span style="color: #82867e; font-size: 20px; font-weight: 500;"
+        >Cerrar sesión</span
+      ></a
+    >
+  </div>
+</mat-nav-list>

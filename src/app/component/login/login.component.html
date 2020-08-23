@@ -1,0 +1,51 @@
+<div>
+  <div class="row">
+    <div class="col-md-6" style="background-color: #f7c525; padding: 10px;">
+      <img
+        style="height: 90%; width: 95%;"
+        src="../../assets/Grupo 2325@3x.png"
+      />
+    </div>
+    <div class="col-md-6" style="background-color: #f7f8f9;">
+      <div style="padding: 18%;">
+        <h1><p style="font-weight: 800;">Login</p></h1>
+        <h4>Bienvenido, ingresa tu usuario y contraseña</h4>
+        <form [formGroup]="form">
+          <input
+            style="
+              margin-bottom: 15px;
+              margin-top: 90px;
+              height: 60px;
+              font-size: 20px !important;
+            "
+            type="email"
+            class="form-control"
+            placeholder="Correo"
+            formControlName="username"
+          />
+          <input
+            formControlName="password"
+            style="margin-top: 50px; height: 60px; font-size: 20px !important;"
+            type="password"
+            class="form-control"
+            placeholder="Contraseña"
+          />
+        </form>
+        <button
+          type="button"
+          style="
+            margin-top: 12%;
+            height: 50px;
+            width: 200px;
+            font-size: 19px;
+            font-weight: 600;
+          "
+          class="btn btn-warning"
+          (click)="login()"
+        >
+          Iniciar sesíon
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
